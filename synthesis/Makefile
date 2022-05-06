@@ -41,7 +41,8 @@ clean:
 	-\rm arbiter.spef
 	-\rm command.log
 	-\rm default.svf
-	-\rm -rf ./../pnr 
+	#-\rm -rf ./../pnr
+	-\rm -rf test
 
 py_compile:
 	mkdir test
@@ -63,7 +64,7 @@ syn:
 sim:
 	vlog arbiter.dcopt.v
 	vlog /uusoc/facility/cad_common/Artisan/GF/cmos65g/aci/sc-adv12/verilog/cmos10sfrvt_a12_neg.v
-	vsim -c -sdftyp /arbiter=arbiter.dcopt.sdf -t ps -do arbiter.do work.arbiter
+	vsim -sdftyp /arbiter=arbiter.dcopt.sdf -t ps -do arbiter.do work.arbiter
 
 validate:
 	diff -c test/GoldenResult test/VerilogResult

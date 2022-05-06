@@ -22,13 +22,18 @@ module arbiter #(
     always @(r, Y) begin
         case (y)
             `IDLE: begin
-                casex (r)
+                case (r)
                     3'b000:     Y = `IDLE;
-                    3'b1xx:     Y = `GNT1;
-                    3'b01x:     Y = `GNT2;
-                    3'b001:     Y = `GNT3; 
+                    3'b001:     Y = `GNT3;
+                    3'b010:     Y = `GNT2;
+                    3'b011:     Y = `GNT2;
+                    3'b100:     Y = `GNT1; 
+                    3'b101:     Y = `GNT1;
+                    3'b110:     Y = `GNT1; 
+                    3'b111:     Y = `GNT1;
                     default:    Y = `IDLE;
                 endcase
+                
             end 
             `GNT1: begin
                 if (r[1])       
@@ -58,11 +63,13 @@ module arbiter #(
             y <= `IDLE;
         else
             y <= Y;
+
     end
 
     // Output
     assign g[1] = (y == `GNT1);
     assign g[2] = (y == `GNT2);
     assign g[3] = (y == `GNT3);
+
     
 endmodule
