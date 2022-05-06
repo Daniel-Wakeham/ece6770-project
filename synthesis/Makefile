@@ -44,8 +44,8 @@ clean:
 	-\rm -rf ./../pnr 
 
 py_compile:
-	mkdir ./../test
-	-\python3 goldenmodel/goldenmodel.py > ./../test/GoldenResult
+	mkdir test
+	-\python3 goldenmodel/goldenmodel.py > test/GoldenResult
 
 vcheck:
 	./arbiter.rtlopt.csh
@@ -53,10 +53,11 @@ vcheck:
 #	-\grep -s -h "Error" arbiter.rtlopt.out
 
 syn:
-	-\mkdir ./../pnr/design_files
+	mkdir ./../pnr
+	mkdir ./../pnr/design_files
 	./arbiter.dcopt.csh
-	-\grep Warning arbiter.dcopt.out
-	-\grep Error arbiter.dcopt.out
+	-\grep 'Warning\|Error' arbiter.dcopt.out
+#	-\grep Error arbiter.dcopt.out
 	tail arbiter.dcopt.constraints
 
 sim:

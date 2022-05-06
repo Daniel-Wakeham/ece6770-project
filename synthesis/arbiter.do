@@ -35,12 +35,12 @@ run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
 echo starting simulation...
 echo starting VCD dump at $now
 vcd file mult.vcd
-vcd add -r /*
+vcd add -r 
 vcd on
 
 ## IMPLEMENT IN PROC
 
-## advance time to input delay for driving inputs
+# advance time to input delay for driving inputs
 run $clk_offset
 ## Force simulation signal r
 force r 2#000
@@ -64,6 +64,79 @@ puts $outfile $str
 ## Advance time to clock edge
 run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
 
+## advance time to input delay for driving inputs
+run $clk_offset
+## Force simulation signal r
+force r 2#010
+## Advance clock to sample time before clock edge
+run [expr 0.5 * $clk_period + $TSETUP]
+set str "r = [exa -radix binary r], g = [exa -radix binary g]"
+echo $str
+puts $outfile $str
+## Advance time to clock edge
+run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
+
+## advance time to input delay for driving inputs
+run $clk_offset
+## Force simulation signal r
+force r 2#011
+## Advance clock to sample time before clock edge
+run [expr 0.5 * $clk_period + $TSETUP]
+set str "r = [exa -radix binary r], g = [exa -radix binary g]"
+echo $str
+puts $outfile $str
+## Advance time to clock edge
+run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
+
+# advance time to input delay for driving inputs
+run $clk_offset
+## Force simulation signal r
+force r 2#100
+## Advance clock to sample time before clock edge
+run [expr 0.5 * $clk_period + $TSETUP]
+set str "r = [exa -radix binary r], g = [exa -radix binary g]"
+echo $str
+puts $outfile $str
+## Advance time to clock edge
+run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
+
+## advance time to input delay for driving inputs
+run $clk_offset
+## Force simulation signal r
+force r 2#101
+## Advance clock to sample time before clock edge
+run [expr 0.5 * $clk_period + $TSETUP]
+set str "r = [exa -radix binary r], g = [exa -radix binary g]"
+echo $str
+puts $outfile $str
+## Advance time to clock edge
+run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
+
+## advance time to input delay for driving inputs
+run $clk_offset
+## Force simulation signal r
+force r 2#110
+## Advance clock to sample time before clock edge
+run [expr 0.5 * $clk_period + $TSETUP]
+set str "r = [exa -radix binary r], g = [exa -radix binary g]"
+echo $str
+puts $outfile $str
+## Advance time to clock edge
+run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
+
+## advance time to input delay for driving inputs
+run $clk_offset
+## Force simulation signal r
+force r 2#111
+## Advance clock to sample time before clock edge
+run [expr 0.5 * $clk_period + $TSETUP]
+set str "r = [exa -radix binary r], g = [exa -radix binary g]"
+echo $str
+puts $outfile $str
+## Advance time to clock edge
+run [expr 0.5 * $clk_period - ($clk_offset + $TSETUP)]
+
+
 echo ... simulation done!
 echo finishing VCD dump at $now
 vcd off
@@ -73,4 +146,4 @@ vcd flush
 close $infile
 close $outfile
 
-#quit
+quit;
