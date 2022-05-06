@@ -41,14 +41,16 @@ clean:
 	-\rm arbiter.spef
 	-\rm command.log
 	-\rm default.svf
+	-\rm -rf ./../pnr 
 
 py_compile:
-	python3 goldenmodel/goldenmodel.py > test/GoldenResult
+	mkdir ./../test
+	-\python3 goldenmodel/goldenmodel.py > ./../test/GoldenResult
 
 vcheck:
 	./arbiter.rtlopt.csh
-	-\grep Warning arbiter.rtlopt.out
-	-\grep Error arbiter.rtlopt.out
+	-\grep -s 'Warning\|Error' arbiter.rtlopt.out
+#	-\grep -s -h "Error" arbiter.rtlopt.out
 
 syn:
 	-\mkdir ./../pnr/design_files
