@@ -41,7 +41,7 @@ clean:
 	-\rm arbiter.spef
 	-\rm command.log
 	-\rm default.svf
-	-\rm -rf ./../pnr
+	-\rm -rf ./../pnr/design_files
 	-\rm -rf test
 
 py_compile:
@@ -54,7 +54,6 @@ vcheck:
 #	-\grep -s -h "Error" arbiter.rtlopt.out
 
 syn:
-	mkdir ./../pnr
 	mkdir ./../pnr/design_files
 	./arbiter.dcopt.csh
 	-\grep 'Warning\|Error' arbiter.dcopt.out

@@ -33,7 +33,7 @@ set design_dir   "./../rtl"
 #set lib_name  "typical"
 #set lib_db    "typical.db"
 #set lib_dir   "/uusoc/facility/cad_common/IBM/Artisan/8RF-1.2v/aci/sc-x/synopsys/"
-#set lib_pdb   "ibm13svt_8lm_2thick_3rf.pdb"
+#set lib_pdb   "bm13svt_8lm_2thick_3rf.pdb"
 
 ## Artisan 65nm:
 set lib_name  "scadv12_cmos10sf_rvt_tt_1p0v_25c"
