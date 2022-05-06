@@ -58,7 +58,7 @@ module arbiter #(
     end
 
     // Sequential block
-    always @(posedge clk ) begin
+    always @(posedge clk) begin
         if (~rstn)
             y <= `IDLE;
         else
@@ -67,9 +67,9 @@ module arbiter #(
     end
 
     // Output
-    assign g[1] = (y == `GNT1);
-    assign g[2] = (y == `GNT2);
-    assign g[3] = (y == `GNT3);
+    assign g[1] = (y == `GNT1) ? 1 : 0;
+    assign g[2] = (y == `GNT2) ? 1 : 0;
+    assign g[3] = (y == `GNT3) ? 1 : 0;
 
     
 endmodule
