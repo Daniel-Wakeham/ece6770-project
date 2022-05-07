@@ -1,0 +1,172 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/research/ece/lnis/USERS/boston/vlsi_projects/aes/rtl
+vaes
+Z1 !s110 1651943358
+!i10b 1
+!s100 flCcfGi:Wjh7^]1g1QX2M0
+!s11b h3hZK[P[bd[8HJP59O`F21
+IGWS4=RIH5Zi]mmcY9N``i3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1651943323
+8aes.v
+Faes.v
+!i122 -1
+Z3 L0 42
+Z4 OL;L;2019.4;69
+r1
+!s85 0
+31
+Z5 !s108 1651943358.000000
+!s107 aes_sbox.v|aes_key_mem.v|aes_encipher_block.v|aes_inv_sbox.v|aes_decipher_block.v|./../rtl/aes_core.v|aes.v|
+Z6 !s90 -work|work|aes.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vaes_core
+R1
+!i10b 1
+!s100 FzHlj_heP6mmC@5XkILQM2
+!s11b m1RcM[[GL]@E?FM]GF;QL3
+IQ<3je>U9MA3GQo0MZELLK0
+R2
+R0
+w1651943354
+8./../rtl/aes_core.v
+F./../rtl/aes_core.v
+!i122 -1
+L0 46
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 aes_sbox.v|aes_key_mem.v|aes_encipher_block.v|aes_inv_sbox.v|aes_decipher_block.v|./../rtl/aes_core.v|aes.v|
+R6
+!i113 0
+R7
+R8
+vaes_decipher_block
+R1
+!i10b 1
+!s100 DI1j^gAm_;CeiA_iAOQaS0
+!s11b ;z_jD4=3d09`QFL6KD4Dg2
+I3jcP>6FK8<cLB61zmjJ6i1
+R2
+R0
+w1651940249
+8aes_decipher_block.v
+Faes_decipher_block.v
+!i122 -1
+Z10 L0 43
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8
+vaes_encipher_block
+R1
+!i10b 1
+!s100 iJ6GaF_L>DQbg@JihR2lS1
+!s11b EM2MEZajX22L_Z::3Oe[=0
+I7SLHURFg_UfRen6dN_boi0
+R2
+R0
+w1651939938
+8aes_encipher_block.v
+Faes_encipher_block.v
+!i122 -1
+R10
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8
+vaes_inv_sbox
+R1
+!i10b 1
+!s100 [@AK84GTO;cVP:BcCIB??2
+!s11b 9IoTJ@b3@XiW@fzciO7>M0
+I8:<R?2goQbG@5;ESI6]?[3
+R2
+R0
+w1651939951
+8aes_inv_sbox.v
+Faes_inv_sbox.v
+!i122 -1
+L0 40
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8
+vaes_key_mem
+R1
+!i10b 1
+!s100 d7Zd6LW:4cQ^fTP]]@[N^1
+!s11b ^BOFm3SCBHCjB;[IJoh=b3
+Ia1f[4aD[JQeUX]4EE2lDA2
+R2
+R0
+w1651939966
+8aes_key_mem.v
+Faes_key_mem.v
+!i122 -1
+L0 41
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8
+vaes_sbox
+R1
+!i10b 1
+!s100 H6<9h3]lGR:9:Ecldei6R1
+!s11b FdBkf1?gT<O@aV^:igB8Y1
+IPIIo7MWmES?JTge2T^PYm3
+R2
+R0
+w1651939982
+8aes_sbox.v
+Faes_sbox.v
+!i122 -1
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8

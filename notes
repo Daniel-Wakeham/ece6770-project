@@ -1,3 +1,0 @@
-For the synthesis rtlopt stage, the compiler found that the default case in the FSM can't be reached.
-This is because at least one case will always be reached before the default. We can remove the default
-case.

@@ -1,0 +1,53 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	
+Date:		Sat May  7 11:52:03 2022
+Host:		lnissrv4 (x86_64 w/Linux 4.18.0-348.20.1.el8_5.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz 22528KB)
+OS:		Red Hat Enterprise Linux release 8.5 (Ootpa)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (1029 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_verilog ./design_files/aes.dcopt.v
+<CMD> set init_top_cell aes
+<CMD> set init_lef_file /home/ece6770/proj/innovus_files/cmos10sfrvt_a12_macros.lef
+<CMD> set init_pwr_net vdd!
+<CMD> set init_gnd_net vss!
+<CMD> set init_mmmc_file ./mmmc.tcl
+<CMD> init_design
+**ERROR: (IMPSYT-6284):	Failed to open file ./mmmc.tcl for read.
+
+Loading LEF file /home/ece6770/proj/innovus_files/cmos10sfrvt_a12_macros.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/ece6770/proj/innovus_files/cmos10sfrvt_a12_macros.lef at line 51.
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNAA12TR' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Sat May  7 11:53:04 2022
+viaInitial ends at Sat May  7 11:53:04 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from ./mmmc.tcl
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.30min, fe_real=1.02min, fe_mem=774.9M) ***
+**ERROR: (IMPSYT-16038):	The specified file './design_files/aes.dcopt.v' could not be found. Check your file system, correct the file name.
+**ERROR: (IMPIMEX-7008):	No netlist files are found.
+
+
+*** Memory Usage v#1 (Current mem = 776.016M, initial mem = 290.191M) ***
+*** Message Summary: 1 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:18.2, real=0:01:04, mem=776.0M) ---

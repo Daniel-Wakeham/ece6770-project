@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : aes
+Version: M-2016.12-SP3
+Date   : Sat May  7 12:48:23 2022
+****************************************
+
+Library(s) Used:
+
+    scadv12_cmos10sf_rvt_tt_1p0v_25c (File: /uusoc/facility/cad_common/Artisan/GF/cmos65g/aci/sc-adv12/synopsys/scadv12_cmos10sf_rvt_tt_1p0v_25c.db)
+
+Number of ports:                         2231
+Number of nets:                         14512
+Number of cells:                        12362
+Number of combinational cells:           9272
+Number of sequential cells:              3041
+Number of macros/black boxes:               0
+Number of buf/inv:                       1808
+Number of references:                      41
+
+Combinational area:              34372.799778
+Buf/Inv area:                     4370.999954
+Noncombinational area:           36194.399972
+Macro/Black Box area:                0.000000
+Net Interconnect area:          889877.751160
+
+Total cell area:                 70567.199750
+Total area:                     960444.950910
+1
