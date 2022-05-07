@@ -1,0 +1,15 @@
+$date
+	Thu May  5 19:15:13 2022
+$end
+$version
+	QuestaSim Version 2019.4
+$end
+$timescale
+	1ps
+$end
+$enddefinitions $end
+#5100
+$dumpvars
+$end
+$dumpoff
+$end

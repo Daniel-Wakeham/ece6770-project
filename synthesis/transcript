@@ -1,0 +1,59 @@
+# vsim -c -sdftyp "/arbiter=arbiter.dcopt.sdf" -t ps -do "arbiter.do" work.arbiter 
+# Start time: 13:58:08 on May 06,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2019.4 linux_x86_64 Oct 15 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.arbiter(fast)
+# Loading work.DFFQNX1A12TR(fast)
+# Loading work.INVX3A12TR(fast)
+# Loading work.NOR2X2A12TR(fast)
+# Loading work.AOI21X1A12TR(fast)
+# Loading work.NOR2X1MA12TR(fast)
+# Loading work.NAND2X1A12TR(fast)
+# Loading work.AOI32X1A12TR(fast)
+# Loading work.OAI2XB1X1A12TR(fast)
+# Loading work.AO21X1A12TR(fast)
+# Loading work.INVX2A12TR(fast)
+# Loading work.INVX2BA12TR(fast)
+# Loading instances from arbiter.dcopt.sdf
+# Loading timing data from arbiter.dcopt.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /arbiter File: arbiter.dcopt.v
+# do arbiter.do
+# 1000
+# 100
+# 50
+# file17
+# file18
+# ======= Begin Functional Test =======
+# r = 001, g = 001
+# r = 101, g = 001
+# r = 100, g = 100
+# r = 110, g = 100
+# r = 010, g = 010
+# r = 110, g = 010
+# r = 100, g = 100
+# r = 101, g = 100
+# r = 001, g = 001
+# r = 010, g = 010
+# r = 111, g = 010
+# r = 101, g = 100
+# r = 100, g = 100
+# r = 000, g = 000
+# r = 010, g = 010
+# r = 110, g = 010
+# ======= End Functional Test =======
+# End time: 13:58:09 on May 06,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

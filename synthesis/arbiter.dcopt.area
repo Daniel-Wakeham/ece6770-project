@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : arbiter
+Version: M-2016.12-SP3
+Date   : Fri May  6 13:58:04 2022
+****************************************
+
+Library(s) Used:
+
+    scadv12_cmos10sf_rvt_tt_1p0v_25c (File: /uusoc/facility/cad_common/Artisan/GF/cmos65g/aci/sc-adv12/synopsys/scadv12_cmos10sf_rvt_tt_1p0v_25c.db)
+
+Number of ports:                            8
+Number of nets:                            24
+Number of cells:                           19
+Number of combinational cells:             17
+Number of sequential cells:                 2
+Number of macros/black boxes:               0
+Number of buf/inv:                          6
+Number of references:                      11
+
+Combinational area:                 41.400000
+Buf/Inv area:                       12.000000
+Noncombinational area:              20.400000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1049.989471
+
+Total cell area:                    61.799999
+Total area:                       1111.789471
+1
