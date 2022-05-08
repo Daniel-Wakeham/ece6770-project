@@ -9,7 +9,7 @@ clean:
 	-\rm aes.dcopt.v
 	-\rm aes.dcopt.area
 	-\rm aes.dcopt.constraints
-	-\rm ae8.dcopt.ddc
+	-\rm aes.dcopt.ddc
 	-\rm aes.dcopt.fullpaths
 	-\rm aes.dcopt.paths
 	-\rm aes.dcopt.power
