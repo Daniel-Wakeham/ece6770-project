@@ -2,8 +2,6 @@
 
 echo RUNNING UofU standard setups ...
 
-setenv DISPLAY "lnissrv4.eng.utah.edu:1003"
-
 # Command aliases
 alias vir 'virtuoso'
 alias cp22 'cd /local/ssd/prj/bw/cad/bw22v0/rajath/'
