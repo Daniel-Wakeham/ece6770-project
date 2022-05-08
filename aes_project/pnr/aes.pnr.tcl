@@ -149,3 +149,5 @@ addFiller -cell $fillerCells -prefix arbiterFILL -markFixed
 verifyConnectivity -type regular -error 50 -warning 50 -report ./reports/conn_regular.rpt
 verifyConnectivity -type special -error 50 -warning 50 -report ./reports/conn_special.rpt
 verifyGeometry -allowSameCellViols -noSameNet -noOverlap -report ./reports/geim.rpt
+
+exit
