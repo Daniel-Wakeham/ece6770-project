@@ -2,11 +2,6 @@
 
 echo RUNNING UofU standard setups ...
 
-# Command aliases
-alias vir 'virtuoso'
-alias cp22 'cd /local/ssd/prj/bw/cad/bw22v0/rajath/'
-alias ep180 'cd /local/ssd/prj/ep/cad/ep180tj/p0/work_libs/bindigan/cds'
-
 ##### Synopsys #######
 source ~/setups/.synopsys_setup_uofu.sh
 
